@@ -9,8 +9,7 @@
     --card-w: 1100px;
     --card-h: 520px;
 
-    /* color tokens kept consistent with previous design */
-    --pink-bg: linear-gradient(180deg,#8394cb,#8394cb); /* soft pink marble-like */
+    --pink-bg: linear-gradient(180deg,#8394cb,#8394cb); 
     --pill-border: rgba(14,111,179,0.18);
     --pill-text: #231f20;
     --accent-blue: #0e63a8;
@@ -42,7 +41,6 @@
     position:relative;
   }
 
-  /* top white strip with home icon (outside main control area) */
   .top-strip{
     position:absolute;
     top:0;
@@ -75,8 +73,8 @@
     position:absolute;
     left:0;
     right:0;
-    top:90px; /* space below top strip */
-    bottom:120px; /* leave room for bottom padding if needed */
+    top:90px;
+    bottom:120px; 
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -86,7 +84,7 @@
     box-sizing:border-box;
   }
 
-  /* pill buttons row */
+
   .button-row{
     display:flex;
     gap:36px;
@@ -111,7 +109,6 @@
     cursor:default;
   }
 
-  /* slide buttons slightly raised above the marble area like the sketch */
   .button-row { transform: translateY(-6px); }
 
   /* progress bar area */
@@ -135,13 +132,13 @@
 
   .progress-fill{
     height:100%;
-    width:44%; /* initial fill percentage — change as needed */
+    width:44%; 
     border-radius:22px;
     background: var(--progress-fill);
     box-shadow: 0 6px 14px rgba(6,90,121,0.28);
   }
 
-  /* smaller screens */
+
   @media (max-width:720px){
     .card{ width:94vw; height:55vh; }
     .controls-wrap{ top:72px; bottom:96px; gap:18px; padding:0 20px; }
@@ -179,3 +176,4 @@
   </div>
 </body>
 </html>
+
