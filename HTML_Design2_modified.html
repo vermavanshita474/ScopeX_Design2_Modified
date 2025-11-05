@@ -9,6 +9,7 @@
     --card-w: 1100px;
     --card-h: 520px;
 
+  
     --pink-bg: linear-gradient(180deg,#8394cb,#8394cb); 
     --pill-border: rgba(14,111,179,0.18);
     --pill-text: #231f20;
@@ -41,6 +42,7 @@
     position:relative;
   }
 
+  /* top white strip with home icon */
   .top-strip{
     position:absolute;
     top:0;
@@ -73,8 +75,8 @@
     position:absolute;
     left:0;
     right:0;
-    top:90px;
-    bottom:120px; 
+    top:190px; 
+    bottom:90px; 
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -84,7 +86,7 @@
     box-sizing:border-box;
   }
 
-
+  /* pill buttons row */
   .button-row{
     display:flex;
     gap:36px;
@@ -108,6 +110,7 @@
     user-select:none;
     cursor:default;
   }
+
 
   .button-row { transform: translateY(-6px); }
 
@@ -138,7 +141,7 @@
     box-shadow: 0 6px 14px rgba(6,90,121,0.28);
   }
 
-
+  /* smaller screens */
   @media (max-width:720px){
     .card{ width:94vw; height:55vh; }
     .controls-wrap{ top:72px; bottom:96px; gap:18px; padding:0 20px; }
@@ -161,19 +164,18 @@
     </div>
 
     <!-- main controls -->
-    <div class="controls-wrap" aria-hidden="false">
-      <div class="button-row" role="group" aria-label="Slide controls">
-        <div class="pill" id="slideIn">SLIDE IN</div>
-        <div class="pill" id="slideOut">SLIDE OUT</div>
-      </div>
-
-      <div class="progress-area" aria-hidden="false">
-        <div class="progress-wrap" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="44" aria-label="Loading progress">
-          <div class="progress-fill" id="progressFill"></div>
-        </div>
-      </div>
+   <div class="controls-wrap" aria-hidden="false">
+  <div class="progress-area" aria-hidden="false">
+    <div class="progress-wrap" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="44" aria-label="Loading progress">
+      <div class="progress-fill" id="progressFill"></div>
     </div>
+  </div>
+
+  <div class="button-row" role="group" aria-label="Slide controls">
+    <div class="pill" id="slideIn">SLIDE IN</div>
+    <div class="pill" id="slideOut">SLIDE OUT</div>
+  </div>
+</div>
   </div>
 </body>
 </html>
-
